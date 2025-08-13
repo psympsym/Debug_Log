@@ -3,6 +3,8 @@
 轻量级嵌入式日志库，支持将 `printf` 等标准输出重定向到 **USB CDC** 或 **USART (1/2/3)**。
 兼容 **GCC / ARMCC / IAR**，零依赖、易移植，适用于 STM32 等 MCU 平台。
 
+![1755072473051.png](https://fastly.jsdelivr.net/gh/psympsym/PicBed@utoolsTuC/2025-08/1755072473051_1755073058514.png)
+
 ## ✨ 特性
 
 -   ✅ 一键重定向 `printf` 到 USB CDC 或 USART

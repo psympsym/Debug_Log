@@ -14,10 +14,12 @@
 
 ## 📂 目录结构
 
+```text
 Debug_Log/
 │ ── debug_log.h
 │ ── Debug_Log.c
-└─ README.md
+└─── README.md
+```
 
 ## 🔧 使用方法
 

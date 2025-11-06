@@ -64,15 +64,15 @@ int fputc(int ch, FILE *f)
     }
     return ch;
 
-#elif defined(DEBUG_LOG_TO_USART1)
+#elif DEBUG_LOG_TO_USART1
     HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
     return ch;
 
-#elif defined(DEBUG_LOG_TO_USART2)
+#elif DEBUG_LOG_TO_USART2
     HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
     return ch;
 
-#elif defined(DEBUG_LOG_TO_USART3)
+#elif DEBUG_LOG_TO_USART3
     HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
     return ch;
 
@@ -103,15 +103,15 @@ int __write(int handle, const unsigned char *buf, unsigned int size)
     }
     return size;
 
-#elif defined(DEBUG_LOG_TO_USART1)
+#elif DEBUG_LOG_TO_USART1
     HAL_UART_Transmit(&huart1, (uint8_t *)buf, size, HAL_MAX_DELAY);
     return size;
 
-#elif defined(DEBUG_LOG_TO_USART2)
+#elif DEBUG_LOG_TO_USART2
     HAL_UART_Transmit(&huart2, (uint8_t *)buf, size, HAL_MAX_DELAY);
     return size;
 
-#elif defined(DEBUG_LOG_TO_USART3)
+#elif DEBUG_LOG_TO_USART3
     HAL_UART_Transmit(&huart3, (uint8_t *)buf, size, HAL_MAX_DELAY);
     return size;
 
